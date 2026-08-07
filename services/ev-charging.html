@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EV Charging Infrastructure | Team V Construction Group</title>
+  <meta name="description" content="Level 1, Level 2 and DC fast-charging construction for multifamily, commercial, fleet and workplace applications.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="../index.html" class="logo-link">
+        <img class="nav-logo" src="../assets/teamv-logo.png" alt="Team V Construction Group">
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#markets">Markets</a>
+        <a href="../index.html#contact">Contact</a>
+        <a class="btn btn-primary" href="mailto:michael.vredevelt@teamvconstructiongroup.com?subject=Project%20Inquiry%20-%20Team%20V">Request a Proposal</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / EV Charging Infrastructure</div>
+      <h1>EV Charging Infrastructure</h1>
+      <p class="lead">Level 1, Level 2 and DC fast-charging construction for multifamily, commercial, fleet and workplace applications.</p>
+    </div>
+  </section>
+
+  <section class="service-content">
+    <div class="container">
+      <div class="service-blurb">
+        <p>Team V delivers complete EV charging infrastructure — from panel upgrades and conduit runs to pedestal or wall-mount installation, networking, and commissioning. We work with property owners, fleet operators, and developers to design and build scalable charging solutions that meet current demand and leave room for future expansion.</p>
+      </div>
+
+      <div class="projects-heading">
+        <div class="eyebrow">Selected Work</div>
+        <h2>Past &amp; representative projects</h2>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card">
+          <img src="../assets/cartoon-01.png" alt="Multifamily Level 2 Expansion – Orange County">
+          <div class="project-body">
+            <h3>Multifamily Level 2 Expansion – Orange County</h3>
+            <div class="meta">32 dual-port Level 2 stations · Existing garage retrofit</div>
+            <p>Upgraded electrical service and installed 32 dual-port Level 2 chargers across two parking structures for a 280-unit apartment community. Included load management, networking, and close coordination with the utility.</p>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="../assets/cartoon-02.png" alt="Workplace DC Fast Charging Hub">
+          <div class="project-body">
+            <h3>Workplace DC Fast Charging Hub</h3>
+            <div class="meta">4 × 150 kW DCFC · Corporate campus</div>
+            <p>Designed and constructed a four-stall DC fast-charging hub for employee and visitor use. Scope covered trenching, concrete pads, switchgear, and full startup testing.</p>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="../assets/cartoon-03.png" alt="Fleet Depot Level 2 Build-Out">
+          <div class="project-body">
+            <h3>Fleet Depot Level 2 Build-Out</h3>
+            <div class="meta">48 ports · Municipal fleet yard</div>
+            <p>Installed a 48-port Level 2 system for a municipal light-duty fleet. Work included new transformers, underground feeders, and integration with the owner’s existing charge-management platform.</p>
+          </div>
+        </article>
+      </div>
+
+      <a href="../index.html#services" class="back-link">← Back to all services</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <img class="footer-logo" src="../assets/teamv-logo.png" alt="Team V Construction Group">
+        <p>Commercial EV charging, solar, battery storage, commissioning, monitoring and O&amp;M.</p>
+      </div>
+      <div>
+        <strong>Capabilities</strong>
+        <p>
+          <a href="ev-charging.html">EV Charging</a><br>
+          <a href="commercial-solar.html">Solar</a><br>
+          <a href="battery-energy-storage.html">BESS</a><br>
+          <a href="commissioning.html">Commissioning</a><br>
+          <a href="monitoring-om.html">Monitoring &amp; O&amp;M</a>
+        </p>
+      </div>
+      <div>
+        <strong>Credentials</strong>
+        <p>B-General Building<br>C-10 Electrical<br>License #1141589</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      document.body.classList.toggle('menu-open', isOpen);
+    });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('menu-open');
+      });
+    });
+  </script>
+</body>
+</html>
